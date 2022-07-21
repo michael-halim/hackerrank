@@ -14,10 +14,10 @@ a
 
 ### What if you would like to assign a value?
 
-```string[5] = 'k'```<br/>
-```Traceback (most recent call last):```<br/>
-```File "<stdin>", line 1, in <module>```<br/>
-```TypeError: 'str' object does not support item assignment```
+```string[5] = 'k' <br/>
+Traceback (most recent call last):<br/>
+File "<stdin>", line 1, in <module><br/>
+TypeError: 'str' object does not support item assignment```
 
 ### How would you approach this?
 
@@ -47,9 +47,9 @@ Read a given string, change the character at a given index and then print the mo
 Complete the mutate_string function in the editor below.
 mutate_string has the following parameters:
 
-> string string: the string to change <br/>
-> int position: the index to insert the character at <br/>
-> string character: the character to insert
+string string: the string to change <br/>
+int position: the index to insert the character at <br/>
+string character: the character to insert
 
 ### Returns
 string: the altered string
