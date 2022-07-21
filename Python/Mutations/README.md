@@ -5,20 +5,21 @@ Let's try to understand this with an example.
 You are given an immutable string, and you want to make changes to it.
 
 ### Example
-
+```
 string = "abracadabra"
 
 You can access an index by:
 print string[5]
 a
-
+```
 ### What if you would like to assign a value?
 
-```string[5] = 'k' <br/>
+```
+string[5] = 'k' <br/>
 Traceback (most recent call last):<br/>
 File "<stdin>", line 1, in <module><br/>
-TypeError: 'str' object does not support item assignment```
-
+TypeError: 'str' object does not support item assignment
+```
 ### How would you approach this?
 
 One solution is to convert the string to a list and then change the value.
@@ -35,22 +36,22 @@ abrackdabra
 > Another approach is to slice the string and join it back.
 
 ### Example
-
+```
 string = string[:5] + "k" + string[6:]
 print string
 abrackdabra
-
+```
 ### Task
 Read a given string, change the character at a given index and then print the modified string.
 
 ### Function Description
 Complete the mutate_string function in the editor below.
 mutate_string has the following parameters:
-
+```
 string string: the string to change <br/>
 int position: the index to insert the character at <br/>
 string character: the character to insert
-
+```
 ### Returns
 string: the altered string
 
@@ -60,11 +61,11 @@ The first line contains a string, .
 The next line contains an integer , the index location and a string , separated by a space.
 
 ### Sample Input
-
+```
 STDIN           Function
 -----           --------
 abracadabra     s = 'abracadabra'
 5 k             position = 5, character = 'k' 
-
+```
 ### Sample Output
 abrackdabra
