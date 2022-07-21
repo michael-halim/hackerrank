@@ -6,20 +6,21 @@ You are given an immutable string, and you want to make changes to it.
 
 ### Example
 
-``string = "abracadabra"
+string = "abracadabra"
 
 You can access an index by:
 print string[5]
-a``
+a
 
-> What if you would like to assign a value?
+### What if you would like to assign a value?
 
-`string[5] = 'k' 
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'str' object does not support item assignment`
+```string[5] = 'k'```<br/>
+```Traceback (most recent call last):```<br/>
+```File "<stdin>", line 1, in <module>```<br/>
+```TypeError: 'str' object does not support item assignment```
 
-> How would you approach this?
+### How would you approach this?
+
 One solution is to convert the string to a list and then change the value.
 
 ### Example
@@ -60,10 +61,10 @@ The next line contains an integer , the index location and a string , separated 
 
 ### Sample Input
 
-```STDIN           Function
+STDIN           Function
 -----           --------
 abracadabra     s = 'abracadabra'
-5 k             position = 5, character = 'k' ```
+5 k             position = 5, character = 'k' 
 
 ### Sample Output
 abrackdabra
